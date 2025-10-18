@@ -1,0 +1,68 @@
+{
+  "hud": {
+    "needs": "Necessidades",
+    "traits": "Traços",
+    "funds": "Fundos",
+    "autonomyOn": "Autônomo",
+    "autonomyOff": "Manual"
+  },
+  "toolbar": {
+    "build": "Construir/Comprar",
+    "exit": "Sair",
+    "budget": "Orçamento"
+  },
+  "palette": {
+    "title": "Objetos",
+    "category": "Categoria",
+    "search": "Buscar",
+    "furniture": "Móveis",
+    "plumbing": "Hidráulica",
+    "entertainment": "Diversão",
+    "appliances": "Eletro"
+  },
+  "agent": {
+    "title": "Agente",
+    "autonomy": "Autonomia",
+    "toggle": "Alternar"
+  },
+  "time": {
+    "pause": "Pausar",
+    "play": "Reproduzir",
+    "speed": "Velocidade"
+  },
+  "notifications": {
+    "veryHungry": "Com muita fome!",
+    "veryTired": "Muito cansado!",
+    "needsFun": "Precisa de diversão!",
+    "confirm": "Objeto colocado!",
+    "invalid": "Posição inválida",
+    "saved": "Jogo salvo",
+    "refunded": "Reembolso realizado"
+  },
+  "build": {
+    "invalid": "Não pode colocar aqui",
+    "confirm": "Colocado",
+    "refunded": "Reembolsado"
+  },
+  "need.hunger": "Fome",
+  "need.energy": "Energia",
+  "need.bladder": "Bexiga",
+  "need.hygiene": "Higiene",
+  "need.fun": "Diversão",
+  "need.social": "Social",
+  "trait.active": "Ativo",
+  "trait.neat": "Organizado",
+  "trait.gourmet": "Gourmet",
+  "trait.lonely": "Solitário",
+  "trait.creative": "Criativo",
+  "object.bed": "Cama",
+  "object.fridge": "Geladeira",
+  "object.toilet": "Vaso sanitário",
+  "object.shower": "Chuveiro",
+  "object.tv": "Televisão",
+  "object.sofa": "Sofá",
+  "object.table": "Mesa",
+  "object.door": "Porta",
+  "object.counter": "Balcão",
+  "object.stove": "Fogão"
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "id": "active",
+    "nameKey": "trait.active",
+    "modifiers": { "energy": 0.1 }
+  },
+  {
+    "id": "neat",
+    "nameKey": "trait.neat",
+    "modifiers": { "hygiene": 0.15 }
+  },
+  {
+    "id": "gourmet",
+    "nameKey": "trait.gourmet",
+    "modifiers": { "hunger": -0.1 }
+  },
+  {
+    "id": "lonely",
+    "nameKey": "trait.lonely",
+    "modifiers": { "social": -0.2 }
+  },
+  {
+    "id": "creative",
+    "nameKey": "trait.creative",
+    "modifiers": { "fun": 0.2 }
+  }
+]

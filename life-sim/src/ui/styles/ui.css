@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #e2e8f0;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+button {
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+  border-radius: 6px;
+  border: none;
+  padding: 6px 8px;
+}

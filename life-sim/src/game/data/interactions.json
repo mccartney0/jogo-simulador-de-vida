@@ -1,0 +1,58 @@
+[
+  {
+    "id": "eat",
+    "interaction": "eat",
+    "cost": 1,
+    "duration": 6,
+    "preconditions": { "hunger": 20 },
+    "effects": [{ "need": "hunger", "amount": 45 }]
+  },
+  {
+    "id": "sleep",
+    "interaction": "sleep",
+    "cost": 1,
+    "duration": 12,
+    "preconditions": { "energy": 30 },
+    "effects": [{ "need": "energy", "amount": 60 }]
+  },
+  {
+    "id": "use_toilet",
+    "interaction": "use_toilet",
+    "cost": 1,
+    "duration": 4,
+    "preconditions": { "bladder": 20 },
+    "effects": [{ "need": "bladder", "amount": 55 }]
+  },
+  {
+    "id": "shower",
+    "interaction": "shower",
+    "cost": 1,
+    "duration": 8,
+    "preconditions": { "hygiene": 40 },
+    "effects": [{ "need": "hygiene", "amount": 60 }]
+  },
+  {
+    "id": "watch_tv",
+    "interaction": "watch_tv",
+    "cost": 1,
+    "duration": 10,
+    "preconditions": { "fun": 30 },
+    "effects": [{ "need": "fun", "amount": 50 }]
+  },
+  {
+    "id": "relax",
+    "interaction": "relax",
+    "cost": 1,
+    "duration": 8,
+    "preconditions": { "fun": 30 },
+    "effects": [{ "need": "fun", "amount": 35 }, { "need": "social", "amount": 10 }]
+  },
+  {
+    "id": "cook",
+    "interaction": "cook",
+    "cost": 2,
+    "duration": 9,
+    "preconditions": { "hunger": 35 },
+    "effects": [{ "need": "hunger", "amount": 30 }, { "need": "fun", "amount": 10 }]
+  }
+]

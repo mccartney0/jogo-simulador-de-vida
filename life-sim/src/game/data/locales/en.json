@@ -1,0 +1,68 @@
+{
+  "hud": {
+    "needs": "Needs",
+    "traits": "Traits",
+    "funds": "Funds",
+    "autonomyOn": "Autonomous",
+    "autonomyOff": "Manual"
+  },
+  "toolbar": {
+    "build": "Build/Buy",
+    "exit": "Exit",
+    "budget": "Budget"
+  },
+  "palette": {
+    "title": "Objects",
+    "category": "Category",
+    "search": "Search",
+    "furniture": "Furniture",
+    "plumbing": "Plumbing",
+    "entertainment": "Entertainment",
+    "appliances": "Appliances"
+  },
+  "agent": {
+    "title": "Agent",
+    "autonomy": "Autonomy",
+    "toggle": "Toggle"
+  },
+  "time": {
+    "pause": "Pause",
+    "play": "Play",
+    "speed": "Speed"
+  },
+  "notifications": {
+    "veryHungry": "Very hungry!",
+    "veryTired": "Very tired!",
+    "needsFun": "Needs fun!",
+    "confirm": "Object placed!",
+    "invalid": "Cannot place here",
+    "saved": "Game saved",
+    "refunded": "Funds refunded"
+  },
+  "build": {
+    "invalid": "Cannot place here",
+    "confirm": "Placed",
+    "refunded": "Refunded"
+  },
+  "need.hunger": "Hunger",
+  "need.energy": "Energy",
+  "need.bladder": "Bladder",
+  "need.hygiene": "Hygiene",
+  "need.fun": "Fun",
+  "need.social": "Social",
+  "trait.active": "Active",
+  "trait.neat": "Neat",
+  "trait.gourmet": "Gourmet",
+  "trait.lonely": "Lonely",
+  "trait.creative": "Creative",
+  "object.bed": "Bed",
+  "object.fridge": "Fridge",
+  "object.toilet": "Toilet",
+  "object.shower": "Shower",
+  "object.tv": "Television",
+  "object.sofa": "Sofa",
+  "object.table": "Table",
+  "object.door": "Door",
+  "object.counter": "Counter",
+  "object.stove": "Stove"
+}

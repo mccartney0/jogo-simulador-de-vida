@@ -1,0 +1,92 @@
+[
+  {
+    "id": "bed_basic",
+    "nameKey": "object.bed",
+    "category": "furniture",
+    "cost": 400,
+    "footprint": { "width": 2, "height": 3 },
+    "entry": { "x": 1, "y": 3 },
+    "interactions": ["sleep"]
+  },
+  {
+    "id": "fridge_basic",
+    "nameKey": "object.fridge",
+    "category": "appliances",
+    "cost": 300,
+    "footprint": { "width": 1, "height": 1 },
+    "entry": { "x": 0, "y": 1 },
+    "interactions": ["eat"]
+  },
+  {
+    "id": "toilet_basic",
+    "nameKey": "object.toilet",
+    "category": "plumbing",
+    "cost": 250,
+    "footprint": { "width": 1, "height": 1 },
+    "entry": { "x": 0, "y": 1 },
+    "interactions": ["use_toilet"]
+  },
+  {
+    "id": "shower_basic",
+    "nameKey": "object.shower",
+    "category": "plumbing",
+    "cost": 350,
+    "footprint": { "width": 1, "height": 2 },
+    "entry": { "x": 0, "y": 2 },
+    "interactions": ["shower"]
+  },
+  {
+    "id": "tv_basic",
+    "nameKey": "object.tv",
+    "category": "entertainment",
+    "cost": 500,
+    "footprint": { "width": 1, "height": 1 },
+    "entry": { "x": 0, "y": 1 },
+    "interactions": ["watch_tv"]
+  },
+  {
+    "id": "sofa_basic",
+    "nameKey": "object.sofa",
+    "category": "furniture",
+    "cost": 320,
+    "footprint": { "width": 2, "height": 1 },
+    "entry": { "x": 1, "y": 1 },
+    "interactions": ["relax"]
+  },
+  {
+    "id": "table_basic",
+    "nameKey": "object.table",
+    "category": "furniture",
+    "cost": 180,
+    "footprint": { "width": 2, "height": 2 },
+    "entry": { "x": 1, "y": 2 },
+    "interactions": []
+  },
+  {
+    "id": "door_basic",
+    "nameKey": "object.door",
+    "category": "furniture",
+    "cost": 150,
+    "footprint": { "width": 1, "height": 1 },
+    "entry": { "x": 0, "y": 1 },
+    "interactions": []
+  },
+  {
+    "id": "counter_basic",
+    "nameKey": "object.counter",
+    "category": "appliances",
+    "cost": 220,
+    "footprint": { "width": 1, "height": 1 },
+    "entry": { "x": 0, "y": 1 },
+    "interactions": []
+  },
+  {
+    "id": "stove_basic",
+    "nameKey": "object.stove",
+    "category": "appliances",
+    "cost": 420,
+    "footprint": { "width": 1, "height": 1 },
+    "entry": { "x": 0, "y": 1 },
+    "interactions": ["cook"]
+  }
+]
