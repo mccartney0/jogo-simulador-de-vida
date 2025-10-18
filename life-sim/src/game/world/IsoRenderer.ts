@@ -1,6 +1,8 @@
 import { Application, Container, Graphics } from 'pixi.js';
 import { cartToIso } from '../core/math';
 import { Tilemap } from './Tilemap';
+import { ObjectDefinition } from '../core/types';
+import { createObjectVisual } from './ObjectSprites';
 
 export interface SpriteHandle {
   id: number;
@@ -77,13 +79,8 @@ export class IsoRenderer {
     return { id: this.spriteIdCounter++, container };
   }
 
-  createObjectSprite(width: number, height: number, color = 0x4caf50): SpriteHandle {
-    const container = new Container();
-    const shape = new Graphics();
-    shape.beginFill(color, 0.9);
-    shape.drawRoundedRect(-width * 16, -height * 8, width * 32, height * 16, 6);
-    shape.endFill();
-    container.addChild(shape);
+  createObjectSprite(def: ObjectDefinition, rotation = 0): SpriteHandle {
+    const container = createObjectVisual(def, rotation);
     this.worldContainer.addChild(container);
     return { id: this.spriteIdCounter++, container };
   }

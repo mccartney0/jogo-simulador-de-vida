@@ -26,7 +26,7 @@ export class ObjectFactory {
   place(def: ObjectDefinition, x: number, y: number, rotation = 0) {
     const width = rotation % 2 === 0 ? def.footprint.width : def.footprint.height;
     const height = rotation % 2 === 0 ? def.footprint.height : def.footprint.width;
-    const sprite = this.renderer.createObjectSprite(width, height, 0x6c5ce7);
+    const sprite = this.renderer.createObjectSprite(def, rotation);
     this.renderer.updateSpritePosition(sprite, x, y);
     this.tilemap.markFootprint(x, y, width, height, true);
     const placed: PlacedObject = { id: def.id, def, x, y, rotation, width, height, sprite };
