@@ -16,6 +16,10 @@ export default defineConfig({
       manifest: false
     })
   ],
+  server: {
+    host: true,
+    allowedHosts: ['localhost', '.manus.computer']
+  },
   build: {
     target: 'esnext'
   },
