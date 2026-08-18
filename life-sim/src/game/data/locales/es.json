@@ -4,7 +4,10 @@
     "traits": "Rasgos",
     "funds": "Fondos",
     "autonomyOn": "Autónomo",
-    "autonomyOff": "Manual"
+    "autonomyOff": "Manual",
+    "status": "Estado",
+    "day": "Día",
+    "help": "Arrastra para mover · desplaza para zoom"
   },
   "toolbar": {
     "build": "Construir/Comprar",
@@ -35,7 +38,7 @@
     "veryTired": "¡Muy cansado!",
     "needsFun": "¡Necesita diversión!",
     "confirm": "¡Objeto colocado!",
-    "invalid": "No se puede colocar",
+    "invalid": "Posición inválida",
     "saved": "Partida guardada",
     "refunded": "Reembolso recibido"
   },
@@ -50,6 +53,10 @@
   "need.hygiene": "Higiene",
   "need.fun": "Diversión",
   "need.social": "Social",
+  "needStatus.critical": "Crítico",
+  "needStatus.low": "Bajo",
+  "needStatus.ok": "Estable",
+  "needStatus.good": "Bien",
   "trait.active": "Activo",
   "trait.neat": "Ordenado",
   "trait.gourmet": "Gourmet",
@@ -64,5 +71,17 @@
   "object.table": "Mesa",
   "object.door": "Puerta",
   "object.counter": "Mostrador",
-  "object.stove": "Estufa"
+  "object.stove": "Estufa",
+  "guide.eyebrow": "Primeros pasos",
+  "guide.title": "Tu lote, tus reglas",
+  "guide.description": "Cuida a tu agente, crea un rincón cómodo y encuentra el ritmo del día.",
+  "guide.stepBuildTitle": "Construye lo esencial",
+  "guide.stepBuildText": "Abre Construir/Comprar y elige un objeto para el lote.",
+  "guide.stepMoveTitle": "Explora el mapa",
+  "guide.stepMoveText": "Haz clic en una casilla libre para enviar al agente.",
+  "guide.stepTimeTitle": "Ajusta el ritmo",
+  "guide.stepTimeText": "Usa pausa, 1x, 2x o 3x para controlar la simulación.",
+  "guide.cta": "Abrir Construir/Comprar",
+  "guide.later": "Explorar por mi cuenta",
+  "guide.close": "Cerrar guía"
 }

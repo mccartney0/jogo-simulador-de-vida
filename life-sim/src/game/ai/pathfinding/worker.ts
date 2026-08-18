@@ -20,7 +20,7 @@ self.onmessage = (event: MessageEvent<RequestMessage>) => {
     const grid = new PathGrid(data.walkables[0].length, data.walkables.length, data.walkables);
     const path = findPath(grid, data.start, data.goal);
     const response: ResponseMessage = { id: data.id, path };
-    (self as any).postMessage(response);
+    self.postMessage(response);
   }
 };
 

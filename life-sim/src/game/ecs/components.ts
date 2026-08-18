@@ -1,4 +1,4 @@
-import { defineComponent, defineQuery, Types, addComponent, IWorld, removeComponent } from 'bitecs';
+import { addComponent, addEntity, defineComponent, defineQuery, Types, IWorld, removeComponent } from 'bitecs';
 
 export const Transform = defineComponent({
   x: Types.f32,
@@ -74,7 +74,7 @@ export function clampNeeds(world: IWorld) {
 }
 
 export function createAgent(world: IWorld, x: number, y: number) {
-  const eid = (world as any).createEntity();
+  const eid = addEntity(world);
   addComponent(world, Transform, eid);
   addComponent(world, Iso, eid);
   addComponent(world, Velocity, eid);

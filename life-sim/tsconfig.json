@@ -3,7 +3,7 @@
     "target": "ESNext",
     "useDefineForClassFields": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "allowJs": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -11,9 +11,9 @@
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
+    "skipLibCheck": true,
     "lib": ["ESNext", "DOM"],
     "types": ["vite/client", "@types/node"]
   },
-  "include": ["src", "tests", "vite.config.ts"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src", "tests", "vite.config.ts"]
 }

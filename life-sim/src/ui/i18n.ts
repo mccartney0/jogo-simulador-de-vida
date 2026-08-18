@@ -5,7 +5,7 @@ import es from '../game/data/locales/es.json';
 
 export const i18n = createI18n({
   legacy: false,
-  locale: 'en',
+  locale: 'pt',
   fallbackLocale: 'en',
   messages: {
     en,

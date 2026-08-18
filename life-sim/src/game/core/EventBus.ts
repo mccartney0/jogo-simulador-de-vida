@@ -9,18 +9,17 @@ export type GameEventMap = {
 type Listener<T> = (payload: T) => void;
 
 export class EventBus {
-  private listeners = new Map<keyof GameEventMap, Set<Listener<any>>>();
+  private listeners = new Map<keyof GameEventMap, Set<Listener<unknown>>>();
 
   on<K extends keyof GameEventMap>(event: K, listener: Listener<GameEventMap[K]>) {
-    if (!this.listeners.has(event)) {
-      this.listeners.set(event, new Set());
-    }
-    this.listeners.get(event)!.add(listener);
+    const listeners = this.listeners.get(event) ?? new Set<Listener<unknown>>();
+    listeners.add(listener as Listener<unknown>);
+    this.listeners.set(event, listeners);
     return () => this.off(event, listener);
   }
 
   off<K extends keyof GameEventMap>(event: K, listener: Listener<GameEventMap[K]>) {
-    this.listeners.get(event)?.delete(listener);
+    this.listeners.get(event)?.delete(listener as Listener<unknown>);
   }
 
   emit<K extends keyof GameEventMap>(event: K, payload: GameEventMap[K]) {

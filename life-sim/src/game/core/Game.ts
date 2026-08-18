@@ -74,7 +74,7 @@ export class Game {
     this.renderer.worldContainer.addChild(this.ghost);
 
     const systems: System[] = [
-      (world, dt) => this.followPath(world, dt),
+      () => this.followPath(),
       (world, dt) => MovementSystem(world, dt),
       (world, dt) => NeedSystem(world, dt),
       (world, dt) => this.interactionSystem.update(world, dt),
@@ -82,7 +82,7 @@ export class Game {
       (world) => this.roomSystem.update(world),
       (world, dt) => AnimationSystem(world, dt),
       (world, dt) => this.timeSystem.update(world, dt),
-      (world) => this.syncUi(world),
+      () => this.syncUi(),
       (world) => this.renderSystem.update(world)
     ];
     this.loop = new GameLoop(this.world, systems);
@@ -124,6 +124,7 @@ export class Game {
   async start() {
     this.setupInput();
     this.createAgent();
+    this.createStarterLot();
     this.loop.start();
     await this.loadSave();
     this.autoSaveTimer = window.setInterval(() => this.save(), 120000);
@@ -270,7 +271,27 @@ export class Game {
     this.renderSystem.registerHandle(eid, handle);
   }
 
-  private followPath(world: GameWorld, dt: number) {
+  private createStarterLot() {
+    const starterLayout = [
+      { id: 'bed_basic', x: 11, y: 12, rotation: 0 },
+      { id: 'sofa_basic', x: 14, y: 12, rotation: 0 },
+      { id: 'fridge_basic', x: 17, y: 12, rotation: 0 },
+      { id: 'stove_basic', x: 17, y: 14, rotation: 0 },
+      { id: 'table_basic', x: 14, y: 15, rotation: 0 },
+      { id: 'counter_basic', x: 17, y: 16, rotation: 0 },
+      { id: 'shower_basic', x: 18, y: 14, rotation: 0 },
+      { id: 'toilet_basic', x: 18, y: 17, rotation: 0 },
+      { id: 'door_basic', x: 14, y: 17, rotation: 0 }
+    ];
+
+    for (const item of starterLayout) {
+      const def = getObjectDefinition(item.id);
+      if (!def || !this.objectFactory.canPlace(def, item.x, item.y, item.rotation)) continue;
+      this.objectFactory.place(def, item.x, item.y, item.rotation);
+    }
+  }
+
+  private followPath() {
     if (!this.agentEntity) return;
     if (this.agentPathIndex >= this.agentPath.length) {
       Velocity.x[this.agentEntity] = 0;
@@ -316,7 +337,7 @@ export class Game {
     });
   }
 
-  private syncUi(world: GameWorld) {
+  private syncUi() {
     if (!this.agentEntity) return;
     const snapshot: NeedsSnapshot = {
       hunger: Needs.hunger[this.agentEntity],

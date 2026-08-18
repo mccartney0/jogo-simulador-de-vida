@@ -4,7 +4,10 @@
     "traits": "Traços",
     "funds": "Fundos",
     "autonomyOn": "Autônomo",
-    "autonomyOff": "Manual"
+    "autonomyOff": "Manual",
+    "status": "Estado",
+    "day": "Dia",
+    "help": "Arraste para mover · role para zoom"
   },
   "toolbar": {
     "build": "Construir/Comprar",
@@ -50,6 +53,10 @@
   "need.hygiene": "Higiene",
   "need.fun": "Diversão",
   "need.social": "Social",
+  "needStatus.critical": "Crítico",
+  "needStatus.low": "Baixo",
+  "needStatus.ok": "Estável",
+  "needStatus.good": "Ótimo",
   "trait.active": "Ativo",
   "trait.neat": "Organizado",
   "trait.gourmet": "Gourmet",
@@ -64,5 +71,17 @@
   "object.table": "Mesa",
   "object.door": "Porta",
   "object.counter": "Balcão",
-  "object.stove": "Fogão"
+  "object.stove": "Fogão",
+  "guide.eyebrow": "Primeiros passos",
+  "guide.title": "Seu lote, suas regras",
+  "guide.description": "Cuide do agente, monte um cantinho confortável e encontre o ritmo ideal para o dia.",
+  "guide.stepBuildTitle": "Monte o essencial",
+  "guide.stepBuildText": "Abra Construir/Comprar e escolha um objeto para o lote.",
+  "guide.stepMoveTitle": "Explore o mapa",
+  "guide.stepMoveText": "Clique em um piso livre para enviar o agente até lá.",
+  "guide.stepTimeTitle": "Ajuste o ritmo",
+  "guide.stepTimeText": "Use pausa, 1x, 2x ou 3x para controlar a simulação.",
+  "guide.cta": "Abrir Construir/Comprar",
+  "guide.later": "Explorar sozinho",
+  "guide.close": "Fechar guia"
 }

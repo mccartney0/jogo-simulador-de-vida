@@ -25,7 +25,8 @@ export const useUiStore = defineStore('ui', {
     nextNotificationId: 1,
     timeScale: 1,
     autonomous: true,
-    locale: 'en',
+    onboardingVisible: true,
+    locale: 'pt',
     needs: {
       hunger: 70,
       energy: 70,
@@ -74,6 +75,12 @@ export const useUiStore = defineStore('ui', {
     },
     setAutonomous(value: boolean) {
       this.autonomous = value;
+    },
+    dismissOnboarding() {
+      this.onboardingVisible = false;
+    },
+    showOnboarding() {
+      this.onboardingVisible = true;
     },
     setLocale(locale: string) {
       this.locale = locale;

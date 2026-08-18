@@ -5,7 +5,7 @@ const DB_NAME = 'life-sim-save';
 const STORE_NAME = 'slot';
 
 interface SaveState {
-  version: number;
+  version: 2;
   timestamp: number;
   needs: Record<string, number>;
   funds: number;

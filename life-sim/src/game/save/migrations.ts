@@ -4,8 +4,10 @@ interface SaveV1 {
   needs: Record<string, number>;
 }
 
-interface SaveV2 extends SaveV1 {
+interface SaveV2 {
   version: 2;
+  timestamp: number;
+  needs: Record<string, number>;
   funds: number;
 }
 

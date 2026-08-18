@@ -5,6 +5,7 @@
     <BuildBuyToolbar />
     <ObjectPalette />
     <AgentPanel />
+    <GuidePanel />
     <TimeControls />
     <Notifications />
   </div>
@@ -17,6 +18,7 @@ import HudPanel from './ui/components/HudPanel.vue';
 import BuildBuyToolbar from './ui/components/BuildBuyToolbar.vue';
 import ObjectPalette from './ui/components/ObjectPalette.vue';
 import AgentPanel from './ui/components/AgentPanel.vue';
+import GuidePanel from './ui/components/GuidePanel.vue';
 import TimeControls from './ui/components/TimeControls.vue';
 import Notifications from './ui/components/Notifications.vue';
 import { Game } from './game/core/Game';
@@ -49,6 +51,9 @@ onBeforeUnmount(() => {
 .game-canvas {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, #34495e 0%, #1b1b1b 80%);
+  background:
+    radial-gradient(circle at 50% 42%, rgba(31, 78, 88, 0.58), transparent 42%),
+    radial-gradient(circle at 50% 100%, rgba(15, 62, 67, 0.35), transparent 54%),
+    linear-gradient(145deg, #071426 0%, #0b1d2c 48%, #101d2b 100%);
 }
 </style>

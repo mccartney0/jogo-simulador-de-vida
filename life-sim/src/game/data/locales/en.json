@@ -4,7 +4,10 @@
     "traits": "Traits",
     "funds": "Funds",
     "autonomyOn": "Autonomous",
-    "autonomyOff": "Manual"
+    "autonomyOff": "Manual",
+    "status": "Status",
+    "day": "Day",
+    "help": "Drag to pan · scroll to zoom"
   },
   "toolbar": {
     "build": "Build/Buy",
@@ -35,9 +38,9 @@
     "veryTired": "Very tired!",
     "needsFun": "Needs fun!",
     "confirm": "Object placed!",
-    "invalid": "Cannot place here",
+    "invalid": "Invalid position",
     "saved": "Game saved",
-    "refunded": "Funds refunded"
+    "refunded": "Refund issued"
   },
   "build": {
     "invalid": "Cannot place here",
@@ -50,6 +53,10 @@
   "need.hygiene": "Hygiene",
   "need.fun": "Fun",
   "need.social": "Social",
+  "needStatus.critical": "Critical",
+  "needStatus.low": "Low",
+  "needStatus.ok": "Steady",
+  "needStatus.good": "Great",
   "trait.active": "Active",
   "trait.neat": "Neat",
   "trait.gourmet": "Gourmet",
@@ -59,10 +66,22 @@
   "object.fridge": "Fridge",
   "object.toilet": "Toilet",
   "object.shower": "Shower",
-  "object.tv": "Television",
+  "object.tv": "TV",
   "object.sofa": "Sofa",
   "object.table": "Table",
   "object.door": "Door",
   "object.counter": "Counter",
-  "object.stove": "Stove"
+  "object.stove": "Stove",
+  "guide.eyebrow": "Getting started",
+  "guide.title": "Your lot, your rules",
+  "guide.description": "Care for your agent, shape a comfortable corner and find the right rhythm for the day.",
+  "guide.stepBuildTitle": "Build the essentials",
+  "guide.stepBuildText": "Open Build/Buy and choose an object for the lot.",
+  "guide.stepMoveTitle": "Explore the map",
+  "guide.stepMoveText": "Click an open tile to send the agent there.",
+  "guide.stepTimeTitle": "Set the pace",
+  "guide.stepTimeText": "Use pause, 1x, 2x or 3x to control the simulation.",
+  "guide.cta": "Open Build/Buy",
+  "guide.later": "Explore on my own",
+  "guide.close": "Close guide"
 }
